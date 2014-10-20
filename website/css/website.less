@@ -1,0 +1,257 @@
+@wolf-light-gray: #ddd;
+@wolf-mid-gray: #bbb;
+@wolf-dark-gray: #999;
+@wolf-black: #2f2f2f;
+@wolf-blue: #50A6C2;
+@login-line-height: 40px;
+@home-logo-margin: 40px;
+@home-logo-size: 180px;
+
+html body h1, html body h2, html body a, html body p {
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+    color: @wolf-black;
+}
+
+header {
+    height: 100vh;
+    position: relative;
+
+    background-image: url(../img/wolf_city.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .wolf-logo {
+        text-align: center;
+        img {
+            margin: @home-logo-margin;
+            width: @home-logo-size;
+        }
+
+        h1 {
+            float: left;
+            margin: 0;
+            line-height: @home-logo-size + (2 * @home-logo-margin) - 10;
+            font-size: 55px;
+        }
+    }
+    .wolf-home {
+        clear: both;
+        h2 {
+            text-align: center;
+            -vendor-animation-duration: 2s;
+            position: absolute;
+            width: 100%;
+            padding: 0 5vw;
+            top: 35vh;
+            text-transform: UPPERCASE;
+            font-size: 40px;
+            font-family: Dosis;
+            letter-spacing: 8px;
+        }
+        .wolf-start-btn {
+            color: #fff;
+            border: 2px solid #fff;
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+        }
+    }
+}
+
+.wrapper {
+    border-top: 10px solid @wolf-blue;
+}
+
+.wolf-start-btn {
+    letter-spacing: 2px;
+    position: absolute;
+    bottom: 10vh;
+    left: calc(~"50% - 86px");
+    border-radius: 3px;
+    font-size: 22px;
+    transition: ease 0.3s;
+}
+
+section#demo {
+    background: none;
+    .wolf-start-btn {
+        color: @wolf-blue;
+        border: 2px solid @wolf-blue;
+        &:hover {
+            color: #fff;
+            background-color: @wolf-blue;
+        }
+    }
+}
+
+section#features {
+    .visible-xs {
+        & > div:last-child {
+            margin-bottom: 25px;
+        }
+    }
+    .media {
+        .media-body {
+            color: @wolf-dark-gray;
+            h3 {
+                color: @wolf-blue;
+            }
+        }
+        i.fa {
+            border: 2px solid @wolf-blue;
+            color: #fff;
+            background: @wolf-blue;
+        }
+        &:hover {
+            .media-body h3 {
+                color: @wolf-blue;
+            }
+            i.fa {
+                color: #fff;
+                background: @wolf-blue;
+            }
+        }
+        &.feature {
+            min-height: 85px;
+        }
+    }
+}
+
+section .section-heading .divider:after {
+    background: @wolf-black;
+}
+
+section#about{
+    .about-item {
+        i.fa {
+            border-color: @wolf-blue;
+            background: @wolf-blue;
+            color: #fff;
+        }
+        h3 {
+            color: @wolf-blue;
+        }
+        &:hover {
+            i.fa {
+                background: @wolf-blue;
+                color: #fff;
+            }
+            h3 {
+                color: @wolf-blue;
+            }
+        }
+    }
+}
+
+section#slider {
+    padding-bottom: 0;
+}
+
+footer {
+    background: @wolf-blue;
+    padding-top: 0;
+    text-align: left;
+    .contact {
+        width: 400px;
+        margin: 30px auto;
+        a {
+            border: 2px solid #fff;
+            margin: 0 25px 0 0;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            border-radius: 50%;
+            i {
+                color: #fff;
+            }
+            transition: ease 0.3s;
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+        }
+        span {
+            font-size: 26px;
+            color: #fff;
+        }
+        &.phone a {
+            padding: 21px 12px 13px 17px;
+        }
+        &.mail a {
+            padding: 21px 10px 14px 14px;
+        }
+    }
+}
+
+#wolf-login-modal {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: @wolf-mid-gray;
+
+    .modal-header {
+        border-bottom: none;
+        padding: 12px 20px 0;
+        .modal-title {
+            font-weight: 200;
+            font-size: 20px;
+            text-align: center;
+        }
+        .close {
+            font-size: 34px;
+            line-height: 30px;
+            &:focus {
+                outline: 0;
+            }
+        }
+    }
+
+    .modal-content {
+        max-width: 300px;
+        margin: auto;
+    }
+
+    .modal-body {
+        color: @wolf-black;
+        font-size: 16px;
+        form {
+            padding-top: 20px;
+            input {
+                letter-spacing: 2px;
+                width: 80%;
+                margin-left: 3%;
+                border: none;
+                border-bottom: 1px solid @wolf-light-gray;
+                outline: none;
+                font-size: 22px;
+                color: @wolf-black;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+.tp-banner-container {
+    position: relative;
+}
+
+@media (max-width: 400px) {
+    header {
+        .wolf-logo {
+            text-align: center;
+
+            img {
+                float: none;
+                margin-top: 5vh;
+                width: 120px;
+            }
+
+            h1 {
+                display: none;
+            }
+        }
+    }
+}
+
