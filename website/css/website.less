@@ -154,7 +154,6 @@ footer {
     padding-top: 0;
     text-align: left;
     .contact {
-        width: 400px;
         margin: 30px auto;
         a {
             border: 2px solid #fff;
@@ -240,17 +239,33 @@ footer {
 @media (max-width: 400px) {
     header {
         .wolf-logo {
-            text-align: center;
-
             img {
                 float: none;
                 margin-top: 5vh;
-                width: 120px;
+                width: 100px;
             }
-
-            h1 {
-                display: none;
+        }
+        .wolf-home {
+            h2 {
+                top: 25vh;
+                font-size: 24px;
             }
+        }
+    }
+    .section-heading {
+        h1 {
+            font-size: 40px;
+        }
+        p {
+            font-size: 22px;
+        }
+    }
+    footer .contact {
+        a {
+            margin: 0 10px 0 0;
+        }
+        span {
+            font-size: 18px;
         }
     }
 }
