@@ -185,4 +185,6 @@ $(document).ready(function() {
 
     appMaster.setRandomColor();
 
+    window.viewportUnitsBuggyfill.init();
+
 });
