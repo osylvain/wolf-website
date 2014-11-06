@@ -199,6 +199,15 @@ footer .contact.mail a {
   position: relative;
 }
 @media (max-width: 400px) {
+  header .wolf-logo img {
+    float: none;
+    margin-top: 5vh;
+    width: 100px;
+  }
+  header .wolf-home h2 {
+    top: 25vh;
+    font-size: 24px;
+  }
   .section-heading h1 {
     font-size: 40px;
   }
@@ -214,18 +223,4 @@ footer .contact.mail a {
   footer .contact span {
     font-size: 18px;
   }
-}
-@media (max-width: 768px) {
-  header .wolf-logo img {
-    float: none;
-    margin-top: 5vh;
-    width: 100px;
-  }
-  header .wolf-home h2 {
-    top: 25vh;
-    font-size: 24px;
-  }
-}
-.btn {
-  background-color: transparent;
 }
