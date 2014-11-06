@@ -28,73 +28,6 @@ var appMaster = {
         });
     },
 
-    reviewsCarousel: function() {
-        // Reviews Carousel
-        $('.review-filtering').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            dots: true,
-            arrows: false,
-            autoplay: true,
-            autoplaySpeed: 5000
-        });
-    },
-
-    screensCarousel: function() {
-        // Screens Carousel
-        $('.filtering').slick({
-            slidesToShow: 4,
-            slidesToScroll: 4,
-            dots: false,
-            responsive: [{
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    infinite: true,
-                    dots: true
-                }
-            }, {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                }
-            }, {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }]
-        });
-
-        $('.js-filter-all').on('click', function() {
-            $('.filtering').slickUnfilter();
-            $('.filter a').removeClass('active');
-            $(this).addClass('active');
-        });
-
-        $('.js-filter-one').on('click', function() {
-            $('.filtering').slickFilter('.one');
-            $('.filter a').removeClass('active');
-            $(this).addClass('active');
-        });
-
-        $('.js-filter-two').on('click', function() {
-            $('.filtering').slickFilter('.two');
-            $('.filter a').removeClass('active');
-            $(this).addClass('active');
-        });
-
-        $('.js-filter-three').on('click', function() {
-            $('.filtering').slickFilter('.three');
-            $('.filter a').removeClass('active');
-            $(this).addClass('active');
-        });
-
-    },
-
     animateScript: function() {
         $('.scrollpoint.sp-effect1').waypoint(function(){$(this).toggleClass('active');$(this).toggleClass('animated fadeInLeft');},{offset:'100%'});
         $('.scrollpoint.sp-effect2').waypoint(function(){$(this).toggleClass('active');$(this).toggleClass('animated fadeInRight');},{offset:'100%'});
@@ -155,7 +88,7 @@ var appMaster = {
         $('.wolf-random-border-color').css('border-color', randomColor);
         $('.wolf-random-bg-color').css('background-color', randomColor);
 
-        $('.wolf-start-btn.wolf-random-hover').hover(function(){
+        $('.wolf-random-hover').hover(function(){
             $(this).css('background-color', randomColor);
             $(this).css('color', '#fff');
         },function(){
@@ -170,10 +103,6 @@ var appMaster = {
 $(document).ready(function() {
 
     appMaster.smoothScroll();
-
-    appMaster.reviewsCarousel();
-
-    appMaster.screensCarousel();
 
     appMaster.animateScript();
 

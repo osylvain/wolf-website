@@ -10,20 +10,19 @@
     <meta charset="UTF-8">
     <title>wolf finance</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <link rel="shortcut icon" href="website/favicon.png">
 
-    <link rel="stylesheet" href="website/css/bootstrap.css">
-    
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="website/css/animate.css">
-    <link rel="stylesheet" href="website/css/font-awesome.min.css">
-    <link rel="stylesheet" href="website/css/slick.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="website/js/rs-plugin/css/settings.css">
 
     <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400' rel='stylesheet' type='text/css'>
 
     <script type="text/javascript" src="website/js/modernizr.custom.32033.js"></script>
-    
     <link rel="stylesheet" href="website/css/eco.css">
     <link rel="stylesheet" href="website/css/website.css">
 
@@ -307,7 +306,7 @@
                         <i class="fa fa-phone fa-2x"></i>
                     </a>
                     <span class="scrollpoint sp-effect4">
-                        (418) 309-2894
+                        (581) 309-2894
                     </span>
                 </div>
             </div>
@@ -319,34 +318,23 @@
         <div class="modal-dialog modal-sm">
             <div class="modal-content">
                 <div class="modal-header">
-                    <!--<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span-->
-                            <!--class="sr-only">Close</span></button>-->
                     <h4 class="modal-title">Merci de votre intérêt, Wolf est actuellement en beta et a besoin de vous!</h4>
                 </div>
                 <div class="modal-body text-center">
                     Si vous désirez participer au programme beta, entrez votre courriel nous vous contacterons
                     <form id="emailForm" action="javascript:sendEmail()">
                         <input id="emailInput" type="email" name="email" placeholder="votre courriel">
-                        <button class="btn" type="submit">envoyer</button>
+                        <button class="btn wolf-random-color wolf-random-border-color wolf-random-hover" type="submit">envoyer</button>
                     </form>
-                    <div id="signinButton">
-                        <span class="g-signin"
-                            data-scope="https://www.googleapis.com/auth/plus.login email"
-                            data-clientid={{CLIENT_ID}}
-                            data-redirecturi="postmessage"
-                            data-accesstype="offline"
-                            data-cookiepolicy="single_host_origin"
-                            data-callback="loginCallback">
-                        </span>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="website/js/jquery-1.11.1.min.js"></script>
-    <script src="website/js/bootstrap.min.js"></script>
-    <script src="website/js/slick.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
     <script src="website/js/placeholdem.min.js"></script>
     <script src="website/js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
     <script src="website/js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
@@ -376,17 +364,6 @@
             }
         }
     </script>
-    <!--<script type="text/javascript">-->
-        <!--(function () {-->
-            <!--var po = document.createElement('script');-->
-            <!--po.type = 'text/javascript';-->
-            <!--po.async = true;-->
-            <!--po.src = 'https://plus.google.com/js/client:plusone.js?onload=start';-->
-            <!--var s = document.getElementsByTagName('script')[0];-->
-            <!--s.parentNode.insertBefore(po, s);-->
-        <!--})();-->
-    <!--</script>-->
-    <!--<script id="wolfLoginScript" src="login.js" data-state="{{STATE}}"></script>-->
 </body>
 
 </html>
